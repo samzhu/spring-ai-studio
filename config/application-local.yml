@@ -1,0 +1,15 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost/?directConnection=true
+      # uri: mongodb://root:secret@localhost:27017/mydatabase
+
+  ai:
+    openai:
+      api-key: ${openaiApiKey}
+
+
+server:
+  error:
+    include-message: always
+    include-binding-errors: always

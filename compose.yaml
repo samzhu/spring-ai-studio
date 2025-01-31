@@ -1,0 +1,27 @@
+services:
+  mongodb:
+    image: 'mongo:latest'
+    environment:
+      - 'MONGO_INITDB_DATABASE=mydatabase'
+      - 'MONGO_INITDB_ROOT_PASSWORD=secret'
+      - 'MONGO_INITDB_ROOT_USERNAME=root'
+    ports:
+      - '27017:27017'
+  # mongodbatlas:
+  #   image: 'mongodb/mongodb-atlas-local:latest'
+  #   ports:
+  #     - '27017:27017'
+  # ollama:
+  #   image: 'ollama/ollama:latest'
+  #   ports:
+  #     - '11434:11434'
+  # pgvector:
+  #   image: 'pgvector/pgvector:pg16'
+  #   environment:
+  #     - 'POSTGRES_DB=mydatabase'
+  #     - 'POSTGRES_PASSWORD=secret'
+  #     - 'POSTGRES_USER=myuser'
+  #   labels:
+  #     - "org.springframework.boot.service-connection=postgres"
+  #   ports:
+  #     - '5432:5432'

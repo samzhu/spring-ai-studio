@@ -1,0 +1,35 @@
+# Project: Spring Boot AI Agent Application
+
+## General
+
+- This is a Spring Boot AI Workflow application
+- Uses Java 21 as development language
+- Integrates with Spring AI for AI model integration
+- Follows Domain-Driven Design (DDD) architecture
+
+## File Structure
+
+- src/main/java/io/github/samzhu/studio/: Main source code
+- application/: Application layer code
+- configuration/: Configuration related code
+- exception/: Exception handling code
+- infrastructures/: Infrastructure layer code
+- models/: Domain model code
+
+## Coding Standards
+
+- 符合 DDD 的分層架構
+- 清晰的關注點分離
+- 容易擴展新的 LLM 提供商
+- 便於維護和測試
+- 遵循單一職責原則
+- Use PascalCase for class names
+- Use camelCase for methods and variables
+
+## Architecture Patterns
+
+- Use Strategy pattern for different AI model implementations
+- Use Factory pattern for AI model instance creation
+- Use Adapter pattern for different output formats
+- Use Domain Events for system integration
+- Follow SOLID principles in design
