@@ -1,3 +1,18 @@
 spring:
   application:
     name: studio
+  # autoconfigure:
+  #   exclude:
+  #   - org.springframework.ai.autoconfigure.openai.OpenAiAutoConfiguration
+  # ai:
+  #   openai:
+  #     chat:
+  #       enabled: false
+  #     embedding:
+  #       enabled: false
+  #     image:
+  #       enabled: false
+  #     audio:
+  #       transcription:
+  #         enabled: false
+      
