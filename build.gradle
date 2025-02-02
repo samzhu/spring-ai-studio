@@ -41,29 +41,30 @@ dependencies {
 	implementation 'io.github.wimdeblauwe:htmx-spring-boot:4.0.1'
 
 	// Database
-	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
-	implementation 'org.liquibase:liquibase-core'
-	runtimeOnly 'org.postgresql:postgresql'
+	// implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+	// implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	// implementation 'org.liquibase:liquibase-core'
+	// runtimeOnly 'org.postgresql:postgresql'
 
 	// Security
-	implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
+	// implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
 
 	// Spring AI
-	implementation 'org.springframework.ai:spring-ai-openai-spring-boot-starter'
-	implementation 'org.springframework.ai:spring-ai-markdown-document-reader'
-	implementation 'org.springframework.ai:spring-ai-pdf-document-reader'
-	implementation 'org.springframework.ai:spring-ai-tika-document-reader'
-	implementation 'org.springframework.ai:spring-ai-ollama-spring-boot-starter'
-	implementation 'org.springframework.ai:spring-ai-azure-openai-spring-boot-starter'
-	implementation 'org.springframework.ai:spring-ai-anthropic-spring-boot-starter'
-	implementation 'org.springframework.ai:spring-ai-vertex-ai-gemini-spring-boot-starter'
-	implementation 'org.springframework.ai:spring-ai-vertex-ai-embedding-spring-boot-starter'
-	implementation 'org.springframework.ai:spring-ai-stability-ai-spring-boot-starter'
+	implementation 'org.springframework.ai:spring-ai-openai'
+	// implementation 'org.springframework.ai:spring-ai-openai-spring-boot-starter'
+	// implementation 'org.springframework.ai:spring-ai-markdown-document-reader'
+	// implementation 'org.springframework.ai:spring-ai-pdf-document-reader'
+	// implementation 'org.springframework.ai:spring-ai-tika-document-reader'
+	// implementation 'org.springframework.ai:spring-ai-ollama-spring-boot-starter'
+	// implementation 'org.springframework.ai:spring-ai-azure-openai-spring-boot-starter'
+	// implementation 'org.springframework.ai:spring-ai-anthropic-spring-boot-starter'
+	// implementation 'org.springframework.ai:spring-ai-vertex-ai-gemini-spring-boot-starter'
+	// implementation 'org.springframework.ai:spring-ai-vertex-ai-embedding-spring-boot-starter'
+	// implementation 'org.springframework.ai:spring-ai-stability-ai-spring-boot-starter'
 	// Spring AI Vector Stores
-	implementation 'org.springframework.ai:spring-ai-mongodb-atlas-store-spring-boot-starter'
-	implementation 'org.springframework.ai:spring-ai-pgvector-store-spring-boot-starter'
+	// implementation 'org.springframework.ai:spring-ai-mongodb-atlas-store-spring-boot-starter'
+	// implementation 'org.springframework.ai:spring-ai-pgvector-store-spring-boot-starter'
 
 	// Spring Cloud
 	implementation 'org.springframework.cloud:spring-cloud-stream'
@@ -71,12 +72,12 @@ dependencies {
 	implementation 'org.springframework.cloud:spring-cloud-starter-circuitbreaker-resilience4j'
 
 	// Spring Modulith
-	implementation 'org.springframework.modulith:spring-modulith-starter-core'
-	implementation 'org.springframework.modulith:spring-modulith-starter-jdbc'
-	implementation 'org.springframework.modulith:spring-modulith-starter-jpa'
-	implementation 'org.springframework.modulith:spring-modulith-starter-mongodb'
-	runtimeOnly 'org.springframework.modulith:spring-modulith-actuator'
-	runtimeOnly 'org.springframework.modulith:spring-modulith-observability'
+	// implementation 'org.springframework.modulith:spring-modulith-starter-core'
+	// implementation 'org.springframework.modulith:spring-modulith-starter-jdbc'
+	// implementation 'org.springframework.modulith:spring-modulith-starter-jpa'
+	// implementation 'org.springframework.modulith:spring-modulith-starter-mongodb'
+	// runtimeOnly 'org.springframework.modulith:spring-modulith-actuator'
+	// runtimeOnly 'org.springframework.modulith:spring-modulith-observability'
 
 	// Monitoring & Tracing
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
