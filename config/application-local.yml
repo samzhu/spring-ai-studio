@@ -5,12 +5,30 @@ spring:
       uri: mongodb://root:secret@localhost:27017
       database: test
 
-  ai:
-    openai:
-      api-key: ${openaiApiKey}
+  # ai:
+  #   openai:
+  #     api-key: ${openaiApiKey}
 
+studio:
+  debug-mode-enabled: true
+  llm-models:
+    - id: gemini-1.5-flash
+      name: Gemini 1.5 Flash
+      description: Gemini 1.5 Flash is a large language model that can generate text, code, and images.
+      llm-provider: google-gemini
 
 server:
   error:
     include-message: always
     include-binding-errors: always
+
+management:
+  otlp:
+    metrics:
+      export:
+        enabled: false
+
+logging:
+  level:
+    root: info
+    org.springframework.ai.chat.client.advisor: DEBUG

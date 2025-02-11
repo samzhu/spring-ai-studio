@@ -1,6 +1,8 @@
 spring:
   application:
     name: studio
+  jmx:
+    enabled: false
   # autoconfigure:
   #   exclude:
   #   - org.springframework.ai.autoconfigure.openai.OpenAiAutoConfiguration
@@ -15,4 +17,3 @@ spring:
   #     audio:
   #       transcription:
   #         enabled: false
-      

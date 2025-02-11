@@ -19,6 +19,7 @@ import lombok.experimental.FieldDefaults;
 @ConfigurationProperties(prefix = "studio")
 @FieldDefaults(level = lombok.AccessLevel.PRIVATE)
 public class ApplicationProperties {
+    Boolean debugModeEnabled = false;
     DefaultModelSetting defaultModelSetting;
     List<LlmModelProperties> llmModels;
     List<EmbeddingModelProperties> embeddingModels;

@@ -3,6 +3,7 @@ package io.github.samzhu.studio.configuration.properties;
 import java.util.HashMap;
 import java.util.Map;
 
+import io.github.samzhu.studio.constants.LlmProvider;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;
 
@@ -21,18 +22,9 @@ public class LlmModelProperties {
     /** Description of the model */
     String description;
 
-    /** Base URL for API calls */
-    String baseUrl;
-
-    /** Specific model identifier */
-    String model;
-
-    /** API key for authentication */
-    String apikey;
-
     /**
-     * Used to store specific settings for each model, e.g. projectId and location are Google-specific settings.
-     */
+	 * Additional native properties to set on the LLM provider.
+	 */
     Map<String, String> properties = new HashMap<>();
 
     /**
@@ -43,5 +35,5 @@ public class LlmModelProperties {
      * - "openai" for OpenAI models (GPT-4, GPT-3.5)
      * - "anthropic" for Anthropic models (Claude)
      */
-    String clientType;
+    LlmProvider llmProvider;
 }
