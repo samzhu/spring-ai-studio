@@ -1,5 +1,4 @@
-@org.springframework.modulith.NamedInterface("properties")
-@org.springframework.modulith.ApplicationModule(
-    type = org.springframework.modulith.ApplicationModule.Type.OPEN
-)
+@org.springframework.modulith.ApplicationModule(type = Type.OPEN)
 package io.github.samzhu.studio.configuration.properties;
+
+import org.springframework.modulith.ApplicationModule.Type;

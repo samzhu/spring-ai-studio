@@ -22,10 +22,7 @@ public class LlmModelProperties {
     /** Description of the model */
     String description;
 
-    /**
-	 * Additional native properties to set on the LLM provider.
-	 */
-    Map<String, String> properties = new HashMap<>();
+   
 
     /**
      * Specifies the LLM client type (e.g. "openai", "anthropic")
@@ -36,4 +33,11 @@ public class LlmModelProperties {
      * - "anthropic" for Anthropic models (Claude)
      */
     LlmProvider llmProvider;
+
+    String model;
+
+     /**
+	 * Additional native properties to set on the LLM provider.
+	 */
+    Map<String, String> properties = new HashMap<>();
 }

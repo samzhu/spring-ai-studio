@@ -11,11 +11,17 @@ spring:
 
 studio:
   debug-mode-enabled: true
+  defaultSettings:
+    llmModelId: gemini-1.5-flash
   llm-models:
     - id: gemini-1.5-flash
       name: Gemini 1.5 Flash
       description: Gemini 1.5 Flash is a large language model that can generate text, code, and images.
       llm-provider: google-gemini
+      model: gemini-1.5-flash
+      properties:
+        api-key: ${gemini-api-key}
+
 
 server:
   error:

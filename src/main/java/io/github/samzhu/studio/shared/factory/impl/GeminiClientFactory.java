@@ -51,7 +51,7 @@ public class GeminiClientFactory implements LlmClientFactory {
 
         // 配置 Chat 選項
         var openAiChatOptions = OpenAiChatOptions.builder()
-                .model(properties.getId()) // 使用配置的模型 ID
+                .model(properties.getModel()) // 使用配置的模型名稱
                 .build();
 
         // 創建 ChatModel
